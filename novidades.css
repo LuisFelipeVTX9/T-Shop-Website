@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+#titulo-pagina{
+	padding: 4rem 0;
+	background: linear-gradient(to top, rgb(214, 255, 56), rgba(214, 255, 56, 0.9), rgba(214, 255, 56, 0.7), rgba(214, 255, 56, 0.5), rgba(214, 255, 56, 0.3), rgba(214, 255, 56, 0.1), #fff);
+    text-align: center;
+}
+#titulo-pagina h1{
+	font-size: 3.5rem;
+	font-family: Poppins, sans-serif;
+}
+
+@media(max-width: 450px){
+	#titulo-pagina h1{
+		font-size: 3rem;
+	}
+}
+
+@media(max-width: 320px){
+	#titulo-pagina h1{
+		font-size: 2rem;
+	}
+}

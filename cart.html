@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Carrinho </title>
+	<link rel="stylesheet" type="text/css" href="cart.css">
+</head>
+<body>
+	<div class="header">
+		<div class="btn-voltar">
+			<a href="index.html">
+				<img src="imagens/voltar.png">
+			</a>
+		</div>
+
+		<div class="carrinho">
+			<h1>Carrinho</h1>
+		</div>
+	</div>
+
+	<div id="produto">
+		<p class="descricao">Camisa Barçelona 2022 MASCULINA:</p>
+
+		<input type="number" name="nome" id="quant" class="quantidade" placeholder="Quantidade...">
+		<div class="preco-final">
+			<span>R$</span>
+			<div id="preco">
+				<p id="price">65.00</p>
+			</div>
+		</div>
+		<button onclick="confirm()">Finalizar Compra</button>
+	</div>
+
+</body>
+</html>

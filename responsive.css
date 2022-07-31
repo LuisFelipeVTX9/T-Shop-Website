@@ -1,0 +1,227 @@
+@media(max-width: 768px){
+	.logo span{
+		padding: 0.4rem 3.5rem;
+		font-size: 18px;
+	}
+	#navbar{
+		height: 40px;
+	}
+	.nav{
+		position: absolute;
+		top: 85px;
+		right: 0;
+		width: 100vw;
+		background: #fff;
+		border-bottom: 1px solid #000;
+		transform: translateX(100%);
+		transition: transform 0.3s ease-in;
+		z-index: 1000;
+	}
+	.nav .menu{
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		height: calc(100vh - 85px);
+	}
+	.nav .menu .menu-item .link{
+		border: none;
+	}
+	.nav .menu .menu-item{
+		margin-left: 0;
+	}
+	.btn-mobile{
+		display: block;
+		margin-right: 5%;
+	}
+	.nav.active{
+		transform: translateX(0);
+	}
+	.title h1{
+		font-size: 60px;
+	}
+	.item-galeria .title-galeria{
+		font-size: 16px;
+	}
+	.product{
+		width: 280px;
+	}
+	#banner-promocao .parte-2{
+		background-position: 50% 50%;
+	}
+	.parte-1 p{
+		font-size: 18px;;
+	}
+	.parte-1 h1{
+		font-size: 70px;
+	}
+	.parte-1 span{
+		font-size: 1rem;
+		text-align: center;
+	}
+	#cupom a{
+		font-size: 30px;
+	}
+	.box-politics{
+		gap: 30px;
+	}
+	.regras{
+		padding: 0.5rem;
+	}
+	.regras h5{
+		font-size: 16px;
+	}
+	.regras a{
+		font-size: 14px;
+	}
+
+
+}
+
+@media(max-width: 450px){
+	#header .promotion{
+		font-size: 12px;
+	}
+	.nav{
+		top: 85px;
+		z-index: 1000;
+	}
+	.nav .menu{
+		height: calc(100vh - 85px);
+	}
+	.title h1{
+		font-size: 55px;
+	}
+	.title .subtitle{font-size: 16px;}
+	#container-galeria{
+		grid-template-columns: repeat(1, 1fr);
+		grid-auto-rows: 50vh;
+	}
+	.h-1{
+		width: 100vw;
+	}
+
+	#banner-promocao{
+		flex-direction: column-reverse;
+	}
+	#banner-promocao div{
+		width: 100%;
+	}
+	.parte-1 p{
+		font-size: 16px;;
+	}
+	.parte-1 h1{
+		font-size: 45px;
+	}
+	.parte-1 span{
+		font-size: 14px;
+		text-align: center;
+	}
+	#cupom a{
+		font-size: 25px;
+	}
+
+	.politica{
+		flex-direction: column;
+		height: 150vh;
+		justify-content: center;
+		align-items: center;
+	}
+	.politica .email-tel{
+		width: 100%;
+	}
+	.box-politics{
+		width: 100%;
+		flex-direction: column;
+		height: 100%;
+		gap: 20px;
+	}
+	.box-politics .regras{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	footer{
+		flex-direction: column;
+		margin-top: 1rem;
+	}
+	footer .social-media{
+		width: 100%;
+	}
+	footer .direitos{
+		width: 100%;
+		text-align: center;
+		border: none;
+		margin-top: 1.5rem;
+	}
+	.direitos .copy{
+		font-size: 14px;
+		padding: 0.5rem 1rem;
+	}
+
+
+}
+
+
+@media(max-width: 320px){
+	#header .promotion{
+		font-size: 12px;
+	}
+	.nav{
+		top: 95px;
+		z-index: 1000;
+	}
+	.nav .menu{
+		height: calc(100vh - 95px);
+	}
+	.title h1{
+		font-size: 30px;
+	}
+	.title .subtitle{
+		font-size: 14px;
+		padding: 0.5rem 1.5rem;
+	}
+	.produtos h2{
+		font-size: 28px;
+	}
+	.product{
+		width: 350px;
+		margin: 15px;
+	}
+	.product .title-product{
+		font-size: 16px;
+	}
+	.product .tamanhos{
+		font-size: 16px;
+	}
+	.product .price-product{
+		font-size: 16px;
+	}
+	.product .botao{
+		font-size: 14px;
+	}
+	#redirecionamento a{
+		font-size: 16px;
+		padding: 0.5rem 2rem;
+	}
+	.parte-1 p{
+		font-size: 14px;;
+	}
+	.parte-1 h1{
+		font-size: 35px;
+	}
+	.parte-1 span{
+		font-size: 12px;
+		text-align: center;
+	}
+	#cupom a{
+		font-size: 20px;
+	}
+	.parte-1 p img{
+		width: 35px; height: 35px; object-fit: cover;
+	}
+	.direitos .copy{
+		font-size: 12px;
+	}
+
+}

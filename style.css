@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+body{
+	overflow-x: hidden;
+}
+html{
+	width: 100vw;
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+#header{
+	text-align: center;
+	padding: 0.750rem 0;
+	background: #000;
+}
+#header .promotion{
+	color: #fff;
+	font-size: 1rem;
+	font-family: Montserrat, sans-serif;
+}
+#navbar{
+	border: 1px solid #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo span{
+	border-right: 1px solid #000;
+	padding: 0.9rem 3.5rem;
+	background: rgb(214, 255, 56);
+	font-size: 24px;
+	font-family: Poppins, sans-serif;
+	font-weight: 600;
+}
+.logo span a{
+	color: #000;
+}
+.btn-mobile{
+	display: none;
+	cursor: pointer;
+}
+.btn-mobile div{
+	width: 32px;
+	height: 2px;
+	background: #000;
+	margin: 8px;
+}
+.nav .menu{
+	display: flex;
+	align-items: center;
+}
+.nav .menu .menu-item{
+	list-style: none;
+}
+.nav .menu .menu-item .link{
+	padding: 1.5rem 2.5rem;
+	border-right: 1px solid #000;
+	color: #000;
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+}
+.nav .menu .menu-item .link-active{
+	background: #000;
+	color: rgb(214, 255, 56);
+	padding: 1.5rem 2.5rem;
+	border-right: 1px solid #000;
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+}
+.nav .menu .menu-item .link:hover{
+	background: #000;
+	color: rgb(214,255,56);
+	transition: .3s;
+}
+.nav .menu .special-item{
+	display: flex;
+	align-items: center;
+	padding: 0.9rem 2.5rem;
+}
+.special-item a{
+	display: flex;
+	align-items: center;
+	font-family: Montserrat, sans-serif;
+	color: #000;
+	font-size: 14px;
+}
+.special-item a img{
+	object-fit: cover;
+}
+
+.title{
+	padding: 1.5rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.title h1{
+	font-size: 65px;
+	font-family: Poppins, sans-serif;
+	font-weight: 800;
+}
+.title .subtitle{
+	background: rgb(214, 255, 56);
+	padding: 0.5rem 2.5rem;
+	font-family: Montserrat, sans-serif;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+#container-galeria{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 80vh;
+	padding: 2.5rem 0;
+	grid-gap: 15px;
+}
+.item-galeria{
+	position: relative;
+	overflow: hidden;
+}
+.item-galeria .img-galeria{
+	width: 100%; height: 100%; object-fit: cover;
+}
+.item-galeria .img-galeria:hover{
+	transform: scale(1.2);
+	transition: 0.4s ease-in-out;
+}
+.item-galeria .title-galeria{
+	position: absolute;
+	background-image: linear-gradient(to top, rgb(214,255,56), rgba(214,255,56,0.8), rgba(214,255,56,0.2));
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: #000;
+	padding: 10px;
+	font-size: 20px;
+	font-family: Montserrat, sans-serif;
+	text-align: center;
+	font-weight: 400;
+}
+.h-1{
+	grid-row: span 1;
+}
+.w-1{
+	grid-column: span 1;
+}
+.w-2{
+	grid-column: span 2;
+}
+
+.produtos{
+	text-align: center;
+	margin-top: 0.5rem;
+}
+.produtos h2{
+	font-size: 35px;
+	font-family: Poppins, sans-serif;
+	color: #000;
+	font-weight: 700;
+}
+
+.box-products{
+	margin-top: 0.5rem;
+	padding: 0.5rem 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.product{
+	width: 300px;
+	height: auto;
+	margin: 20px;
+}
+.img-product{
+	overflow: hidden;
+}
+.product img{
+	width: 100%; height: auto; object-fit: cover;
+}
+.product img:hover{
+	transform: scale(1.2);
+	transition: .4s;
+	cursor: pointer;
+}
+.product .title-product{
+	text-align: center;
+	padding: 0.5rem 0;
+	width: 100%;
+	border-bottom: 1px solid #000;
+	font-size: 18px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+}
+.product .tamanhos{
+	font-size: 18px;
+	font-family: Montserrat, sans-serif;
+	padding: 0.750rem 0;
+	border-bottom: 1px solid #000;
+	width: 100%;
+	text-align: center;
+}
+.product .price-product{
+	text-align: center;
+	padding: 0.750rem 0;
+	width: 100%;
+	font-size: 18px;
+	font-family: Poppins, sans-serif;
+	font-weight: 400;
+}
+.product .botao{
+	width: 100%;
+	color: rgb(214, 255, 56);
+	background: #000;
+	border: none;
+	font-size: 16px;
+	padding: 0.750rem 0;
+	font-family: Montserrat, sans-serif;
+}
+.product .botao:hover{
+	transition: .4s;
+	cursor: pointer;
+	background: rgb(214, 255, 56);
+	color: #000;
+	font-weight: 500;
+}
+
+#banner-promocao{
+	width: 100%;
+	height: 80vh;
+	margin-top: 5rem;
+	display: flex;
+}
+#banner-promocao div{
+	width: 50%;
+	height: 80vh;
+}
+#banner-promocao .parte-1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: linear-gradient(to top, rgb(214, 255, 56), rgba(214, 255, 56, 0.9), rgba(214, 255, 56, 0.7), rgba(214, 255, 56, 0.5), rgba(214, 255, 56, 0.3), rgba(214, 255, 56, 0.1), #fff);
+}
+.parte-1 p{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	font-size: 22px;
+	font-family: Montserrat, sans-serif;
+}
+.parte-1 p img{
+	width: 50px; height: 50px; object-fit: cover;
+}
+.parte-1 h1{
+	margin-top: 0.750rem;
+	font-size: 105px;
+	font-family: Poppins, sans-serif;
+	font-weight: 700;
+}
+.parte-1 span{
+	margin-top: 0.750rem;
+	font-size: 1.2rem;
+	font-family: Montserrat, sans-serif;
+}
+#banner-promocao .parte-2{
+	background-image: url(imagens/modelo_fem4.png);
+	background-size: cover;
+}
+#cupom{
+	padding: 3rem;
+	text-align: center;
+}
+#cupom a{
+	font-family: Poppins, sans-serif;
+	color: #000;
+	text-decoration: underline;
+	font-size: 40px;
+	letter-spacing: 1px;
+	font-weight: 800;
+}
+
+.politica{
+	width: 100%;
+	height: 40vh;
+	display: flex;
+}
+.politica .email-tel{
+	background: #000;
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.email-tel h4{
+	color: #fff;
+	font-family: Poppins, sans-serif;
+	font-size: 24px;
+}
+.email-tel .informacao{
+	margin-top: 0.750rem;
+	color: #fff;
+	font-size: 1rem;
+	font-family: Poppins, sans-serif;
+	font-weight: 300;
+}
+.politicas{
+	border-top: 1px solid #000;
+	height: 100%;
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box-politics{
+	display: flex;
+	gap: 50px;
+}
+.regras{
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+}
+.regras h5{
+	font-family: Montserrat, sans-serif;
+	font-size: 18px;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+}
+.regras a{
+	font-family: Montserrat, sans-serif;
+	font-size: 1rem;
+	color: #000;
+	padding: 0.5rem;
+}
+.regras a:hover{
+	background: rgba(0, 0, 0, 0.2);
+	transition: .4s;
+}
+
+footer{
+	height: 10vh;
+	width: 100%;
+	display: flex;
+}
+footer .social-media{
+	width: 30%;
+	height: 100%;
+	gap: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.social-media img{
+	width: 25px;
+	height: 25px;
+	object-fit: cover;
+	opacity: 80%;
+}
+.social-media img:hover{
+	transition: .4s;
+	opacity: 100%;
+}
+footer .direitos{
+	width: 70%;
+	height: 100%;
+	background: rgb(214, 255, 56);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #000;
+	flex-wrap: wrap;
+}
+.direitos .copy{
+	font-family: Poppins, sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+
